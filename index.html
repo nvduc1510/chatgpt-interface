@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">ChatGPT</h1>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Log in</a>
+                    <a href="#" class="nav-link">Sign up for free</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main">
+            <!-- Chat Header -->
+            <div class="chat-header">
+                <div class="chat-title-container">
+                    <input type="checkbox" id="temp-chat-checkbox" class="checkbox">
+                    <h2 class="chat-title">Temporary Chat</h2>
+                </div>
+                <p class="chat-description">
+                    This chat won't appear in history or be used to train our models. For safety purposes, we may keep a copy of this chat for up to 30 days.
+                </p>
+            </div>
+
+            <!-- Chat History Container -->
+            <div id="chat-history" class="chat-history">
+                <!-- Chat messages will appear here -->
+            </div>
+
+            <!-- Input Section -->
+            <div class="input-section">
+                <div class="input-container">
+                    <textarea 
+                        id="message-input" 
+                        class="message-input" 
+                        placeholder="Ask anything..."
+                        rows="1"
+                    ></textarea>
+                    
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button id="attach-btn" class="action-btn">
+                            📎 Attach
+                        </button>
+                        <button id="search-btn" class="action-btn">
+                            🔍 Search
+                        </button>
+                        <button id="voice-btn" class="action-btn">
+                            🎤 Voice
+                        </button>
+                    </div>
+                    
+                    <!-- Hidden file input -->
+                    <input type="file" id="file-input" class="file-input" multiple>
+                </div>
+                
+                <!-- File upload options -->
+                <div class="file-options">
+                    <button id="choose-files-btn" class="file-option-btn">Choose Files</button>
+                    <span class="file-separator">|</span>
+                    <span class="file-status">No file chosen</span>
+                    <button id="choose-files-btn-2" class="file-option-btn">Choose Files</button>
+                    <span class="file-separator">|</span>
+                    <span class="file-status">No file chosen</span>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p class="footer-text">
+                By messaging ChatGPT, you agree to our 
+                <a href="https://openai.com/terms" target="_blank" rel="noopener" class="footer-link">Terms</a> 
+                and have read our 
+                <a href="https://openai.com/privacy" target="_blank" rel="noopener" class="footer-link">Privacy Policy</a>.
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
